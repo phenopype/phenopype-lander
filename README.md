@@ -1,3 +1,3 @@
 # phenopype-lander
 
-lander homepage for https://phenopype.org
+code for lander homepage served under https://phenopype.org
