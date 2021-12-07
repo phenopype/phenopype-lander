@@ -1,0 +1,80 @@
+.main {
+	max-width: 1160px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+}
+
+.lander_grid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	gap: 24px;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-start;
+}
+
+.lander_item{
+	display: flex;
+	flex: calc(100% / 3);
+	border-radius: 10px;
+	background-color: var(--color-background-border);
+	border: 5px solid var(--color-background-border);
+	color: var(--sd-color-card-text);
+	cursor: pointer;
+	transition: 0s;
+	min-width: 325px;
+	min-height: 250px;  
+	max-width: 325px;
+	max-height: 250px; 
+	overflow: hidden;
+	position: relative;
+}
+
+.lander_item img {
+	object-fit: cover;
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+	opacity: 0.75;
+}
+
+.lander_item_title {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	bottom: 30px;
+	background-color: var(--color-background-border);
+	color: var(--sd-color-card-text);
+	text-align: center;
+}
+
+.top-row-line {
+    color: var(--color-foreground-primary);
+    line-height: 1.5;
+    margin-top: 1rem;
+	margin-bottom: 1rem;
+    padding: .75rem .75rem 1rem;
+    border-bottom: 1px solid var(--color-background-border);
+}
+
+
+.theme-toggle svg {
+    height: 1.5rem;
+    width: 1.5rem
+}
+
+.related-information {
+    margin-top: 0rem;
+}
+
+.content-icon-container {
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    margin-top: 2rem
+}
