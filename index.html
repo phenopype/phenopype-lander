@@ -116,35 +116,35 @@
 			<div class="lander_item sd-shadow-sm sd-card-hover">
 				<a href="https://phenopype.org/docs/quickstart" target="_blank">
 				<img src="/assets/images/thumb_quickstart.png" /></a>
-				<div class="lander_item_title"><a href="https://phenopype.org/docs/quickstart" target="_blank" style="colour: white"><h4>Docs | Quickstart</h4><p>Get started using phenopype</p></a></div>
+				<div class="lander_item_title"><a href="https://phenopype.org/docs/quickstart" style="colour: white"><h4>Docs | Quickstart</h4><p>Get started using phenopype</p></a></div>
 			</div>
 			
 			<div class="lander_item sd-shadow-sm sd-card-hover">
-				<a href="https://phenopype.org/docs/tutorials/index.html" target="_blank">
+				<a href="https://phenopype.org/docs/tutorials/index.html" >
 				<img src="/assets/images/thumb_tutorials.png" />
 				<div class="lander_item_title"><h4>Docs | Tutorials</h4><p>Jupyter notebooks</p></a></div>
 			</div>
 			
 			<div class="lander_item sd-shadow-sm sd-card-hover">
-				<a href="https://phenopype.org/docs/" target="_blank">
+				<a href="https://phenopype.org/docs/" >
 				<img src="/assets/images/thumb_docs.png" />
 				<div class="lander_item_title"><h4>Docs | Homepage</h4><p>Full documentation and API-reference</p></a></div>
 			</div>
 			
 			<div class="lander_item sd-shadow-sm sd-card-hover">
-				<a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13771" target="_blank">
+				<a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13771" >
 				<img src="/assets/images/thumb_pub.png" />
 				<div class="lander_item_title"><h4>Publication</h4><p>Methods in Ecology and Evolution</p></a></div>
 			</div>
 			
 			<div class="lander_item sd-shadow-sm sd-card-hover">
-				<a href="https://phenopype.org/gallery" target="_blank">
+				<a href="https://phenopype.org/gallery" >
 				<img src="/assets/images/thumb_gallery.png" />
 				<div class="lander_item_title"><h4>Gallery</h4><p>Example gallery</p></a></div>
 			</div>
 			
 			<div class="lander_item sd-shadow-sm sd-card-hover">
-				<a href="https://github.com/phenopype/phenopype" target="_blank">
+				<a href="https://github.com/phenopype/phenopype" >
 				<img src="/assets/images/thumb_repo.png" />
 				<div class="lander_item_title"><h4>Source code</h4><p>GitHub repository</p></a></div>
 			</div>
@@ -152,7 +152,7 @@
 
 	<footer>
 		<div class="related-information"> 
-			Copyright &#169; <span id='year'></span>, <a href="https://luerig.net">Moritz Lürig</a>  | Last updated on <span id='date-time'></span>.<br>
+			Copyright &#169; 2021, <a href="https://luerig.net">Moritz Lürig</a>  | Last updated on 2021-12-15 18:53:00.<br>
 			Created using <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
 			<a href="https://github.com/pradyunsg/furo">Furo theme</a>.
 		</div>
@@ -166,17 +166,6 @@
 
     <script src="/assets/js/jquery.js"></script>
     <script src="/assets/js/furo.js"></script>
-	<script>
-	<!-- var date = document.lastModified; -->
-	<!-- document.getElementById("date-time").innerHTML = date; -->
-	var date = new Date(document.lastModified).toJSON().slice(0,10).replace(/-/g,'-');
-	var today = new Date(document.lastModified);
-	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-	document.getElementById("date-time").innerHTML = date + " " + time;
-	var year = new Date(document.lastModified).toJSON().slice(0,4);
-	document.getElementById("year").innerHTML = year;
-
-	</script>
 
     </body>
 </html>
