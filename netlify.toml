@@ -1,5 +1,18 @@
 [[redirects]]
+  from = "https://www.phenopype.org/docs"
+  to = "https://www.phenopype.org/docs/index.html"
+  status = 301
+  force = true
+  
+[[redirects]]
+  from = "https://www.phenopype.org/docs/"
+  to = "https://www.phenopype.org/docs/index.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/docs/*"
   to = "https://docs.phenopype.org/:splat/"
   status = 200
   force = true
+  
