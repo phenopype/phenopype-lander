@@ -1,3 +1,6 @@
+
+/* structure */
+
 .main {
 	max-width: 1160px;
 	margin: 0 auto;
@@ -8,6 +11,55 @@
 .content {
     width: 100%;
 }
+
+
+
+
+/* logo and top row */
+
+.top-container {
+  display: flex; 
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 50px 15px 15px 0px;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.logo-container {
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+}
+	
+.title-container {
+  display: flex; 
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.top-row-line {
+    color: var(--color-foreground-primary);
+    line-height: 1.5;
+    margin-top: 1rem;
+		margin-bottom: 1rem;
+    padding: .75rem .75rem 1rem;
+    border-bottom: 1px solid var(--color-background-border);
+}
+
+
+.title-container h4-tit {
+font-size: 2.3em;
+font-weight: 400;
+margin: 0em 0;
+}
+
+.title-container p-tit {
+font-weight: 400;
+margin: 0em 0;
+}
+
+/* grid */
 
 .lander_grid{
 	display: flex;
@@ -36,36 +88,35 @@
 	position: relative;
 }
 
-.lander_item img {
-	object-fit: cover;
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-	opacity: 0.75;
-}
 
-.lander_item_title {
+.lander_item a {
 	display: inline-block;
 	position: absolute;
 	width: 100%;
-	bottom: 30px;
+	bottom: 0px;
 	background-color: var(--color-foreground-border);
-	/* color: var(--sd-color-card-text); */
+	color: var(--sd-color-card-text);
 	text-align: center;
+  text-decoration: none;
+	object-fit: cover;
 }
 
-.lander_item_title h4 {
-	colour: black;
+
+.lander_item a:visited {
+	color: var(--sd-color-card-text);
+  text-decoration: none;
+	
 }
 
-.top-row-line {
-    color: var(--color-foreground-primary);
-    line-height: 1.5;
-    margin-top: 1rem;
-	margin-bottom: 1rem;
-    padding: .75rem .75rem 1rem;
-    border-bottom: 1px solid var(--color-background-border);
+.lander_item a:hover {
+	color: var(--sd-color-card-text);
+  text-decoration: none;
 }
+
+/* .lander_item_title h4 { */
+	/* colour: black; */
+/* } */
+
 
 
 .theme-toggle svg {
@@ -84,37 +135,7 @@
 }
 
 
-.top-container {
-  display: flex; 
-  justify-content: flex-start;
-  flex-direction: row;
-  margin: 15px 5px;
-  gap: 10px;
-  line-height: 1.5;
-}
 
-.logo-container {
-  display: flex; 
-  justify-content: flex-end;
-  align-items: center;
-}
-	
-.title-container {
-  display: flex; 
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-h-new {
-font-size: 2.3em;
-font-weight: 400;
-margin: 0em 0;
-}
-
-p-new {
-font-weight: 400;
-margin: 0em 0;
-}
 
 @media (max-width: 790px){
 	.lander_grid{
