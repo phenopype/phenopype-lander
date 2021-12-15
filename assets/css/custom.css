@@ -23,8 +23,8 @@
 	display: flex;
 	flex: calc(100% / 3);
 	border-radius: 10px;
-	background-color: var(--color-background-border);
-	border: 5px solid var(--color-background-border);
+	background-color: var(--color-foreground-border);
+	border: 5px solid var(--color-foreground-border);
 	color: var(--sd-color-card-text);
 	cursor: pointer;
 	transition: 0s;
@@ -49,9 +49,13 @@
 	position: absolute;
 	width: 100%;
 	bottom: 30px;
-	background-color: var(--color-background-border);
-	color: var(--sd-color-card-text);
+	background-color: var(--color-foreground-border);
+	/* color: var(--sd-color-card-text); */
 	text-align: center;
+}
+
+.lander_item_title h4 {
+	colour: black;
 }
 
 .top-row-line {
@@ -77,4 +81,56 @@
     margin-bottom: 1rem;
     margin-left: 0rem;
     margin-top: 2rem
+}
+
+
+.top-container {
+  display: flex; 
+  justify-content: flex-start;
+  flex-direction: row;
+  margin: 15px 5px;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.logo-container {
+  display: flex; 
+  justify-content: flex-end;
+  align-items: center;
+}
+	
+.title-container {
+  display: flex; 
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+h-new {
+font-size: 2.3em;
+font-weight: 400;
+margin: 0em 0;
+}
+
+p-new {
+font-weight: 400;
+margin: 0em 0;
+}
+
+@media (max-width: 790px){
+	.lander_grid{
+	justify-content: center;
+	}
+	.top-container {
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  }
+	.logo-container {
+	  justify-content: flex-start;
+	}
+}
+
+hr.top {
+	border-top: 0.25px solid var(--color-background-border);
+	margin-top: 25px;
 }

@@ -817,96 +817,96 @@ article {
     }
 }
 
-@media(max-width:82em) {
-    .toc-content-icon {
-        display: flex
-    }
-    .toc-drawer {
-        border-left: 1px solid var(--color-background-muted);
-        height: 100vh;
-        position: fixed;
-        right: -15em;
-        top: 0
-    }
-    .toc-tree {
-        border-left: none;
-        font-size: var(--toc-font-size--mobile)
-    }
-    .sidebar-drawer {
-        width: calc(50% - 18.5em)
-    }
-}
+/* @media(max-width:82em) { */
+    /* .toc-content-icon { */
+        /* display: flex */
+    /* } */
+    /* .toc-drawer { */
+        /* border-left: 1px solid var(--color-background-muted); */
+        /* height: 100vh; */
+        /* position: fixed; */
+        /* right: -15em; */
+        /* top: 0 */
+    /* } */
+    /* .toc-tree { */
+        /* border-left: none; */
+        /* font-size: var(--toc-font-size--mobile) */
+    /* } */
+    /* .sidebar-drawer { */
+        /* width: calc(50% - 18.5em) */
+    /* } */
+/* } */
 
-@media(max-width:67em) {
-    .nav-overlay-icon {
-        display: flex
-    }
-    .sidebar-drawer {
-        height: 100vh;
-        left: -15em;
-        position: fixed;
-        top: 0;
-        width: 15em
-    }
-    .toc-header-icon {
-        display: flex
-    }
-    .theme-toggle-content,
-    .toc-content-icon {
-        display: none
-    }
-    .theme-toggle-header {
-        display: block
-    }
-    .mobile-header {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0
-    }
-    .mobile-header .header-left,
-    .mobile-header .header-right {
-        display: flex;
-        height: var(--header-height);
-        padding: 0 var(--header-padding)
-    }
-    .mobile-header .header-left label,
-    .mobile-header .header-right label {
-        height: 100%;
-        width: 100%
-    }
-    :target {
-        scroll-margin-top: var(--header-height)
-    }
-    .page {
-        flex-direction: column;
-        justify-content: center
-    }
-    .content {
-        margin-left: auto;
-        margin-right: auto
-    }
-}
+/* @media(max-width:67em) { */
+    /* .nav-overlay-icon { */
+        /* display: flex */
+    /* } */
+    /* .sidebar-drawer { */
+        /* height: 100vh; */
+        /* left: -15em; */
+        /* position: fixed; */
+        /* top: 0; */
+        /* width: 15em */
+    /* } */
+    /* .toc-header-icon { */
+        /* display: flex */
+    /* } */
+    /* .theme-toggle-content, */
+    /* .toc-content-icon { */
+        /* display: none */
+    /* } */
+    /* .theme-toggle-header { */
+        /* display: block */
+    /* } */
+    /* .mobile-header { */
+        /* align-items: center; */
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* position: -webkit-sticky; */
+        /* position: sticky; */
+        /* top: 0 */
+    /* } */
+    /* .mobile-header .header-left, */
+    /* .mobile-header .header-right { */
+        /* display: flex; */
+        /* height: var(--header-height); */
+        /* padding: 0 var(--header-padding) */
+    /* } */
+    /* .mobile-header .header-left label, */
+    /* .mobile-header .header-right label { */
+        /* height: 100%; */
+        /* width: 100% */
+    /* } */
+    /* :target { */
+        /* scroll-margin-top: var(--header-height) */
+    /* } */
+    /* .page { */
+        /* flex-direction: column; */
+        /* justify-content: center */
+    /* } */
+    /* .content { */
+        /* margin-left: auto; */
+        /* margin-right: auto */
+    /* } */
+/* } */
 
-@media(max-width:52em) {
-    .content {
-        overflow-x: auto;
-        width: 100%
-    }
-}
+/* @media(max-width:52em) { */
+    /* .content { */
+        /* overflow-x: auto; */
+        /* width: 100% */
+    /* } */
+/* } */
 
-@media(max-width:46em) {
-    .content {
-        padding: 0 1em
-    }
-    article div.sidebar {
-        float: none;
-        margin: 1rem 0;
-        width: 100%
-    }
-}
+/* @media(max-width:46em) { */
+    /* .content { */
+        /* padding: 0 1em */
+    /* } */
+    /* article div.sidebar { */
+        /* float: none; */
+        /* margin: 1rem 0; */
+        /* width: 100% */
+    /* } */
+/* } */
 
 .admonition,
 .topic {
