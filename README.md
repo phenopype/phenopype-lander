@@ -1,3 +1,3 @@
 # phenopype-lander
 
-code for lander homepage served under https://phenopype.org
+Code for the lander homepage served under https://phenopype.org - the theming is borrowed from the documentaton theme [Furo](https://github.com/pradyunsg/furo).
