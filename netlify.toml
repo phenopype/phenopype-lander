@@ -4,3 +4,10 @@
   status = 200
   force = true
   
+[[redirects]]
+  from = "/gallery/*"
+  to = "https://gallery.phenopype.org/:splat/"
+  status = 200
+  force = true
+  
+  
