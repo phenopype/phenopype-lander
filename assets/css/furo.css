@@ -811,11 +811,11 @@ article {
     top: 0
 }
 
-@media(min-width:97em) {
-    html {
-        font-size: 110%
-    }
-}
+/* @media(min-width:97em) { */
+    /* html { */
+        /* font-size: 110% */
+    /* } */
+/* } */
 
 /* @media(max-width:82em) { */
     /* .toc-content-icon { */

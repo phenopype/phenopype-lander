@@ -100,7 +100,9 @@ margin: 0em 0;
 }
 
 .lander_item img {
-   width: 100%;
+    max-width: 110%;
+    max-height: 100%;
+    /* width: auto; */
 }
 
 .lander_item a:visited {
