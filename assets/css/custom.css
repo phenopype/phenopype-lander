@@ -13,8 +13,6 @@
 }
 
 
-
-
 /* logo and top row */
 
 .top-container {
@@ -101,6 +99,9 @@ margin: 0em 0;
 	object-fit: cover;
 }
 
+.lander_item img {
+   width: 100%;
+}
 
 .lander_item a:visited {
 	color: var(--sd-color-card-text);
