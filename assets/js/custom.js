@@ -1,14 +1,35 @@
-function setModifiedDate() {
-  if (document.getElementById('last-modified')) {
-    fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
-      .then((response) => {
+repo_api_link = "https://api.github.com/repos/phenopype/phenopype-lander/commits";
+
+function ModifiedDateTime() {
+    fetch(repo_api_link).then((response) => {
         return response.json();
       })
       .then((commits) => {
-        var modified = commits[0]['commit']['committer']['date'].slice(0,10);
-        if(modified != "{{ page.date | date: "%Y-%m-%d" }}") {
-          document.getElementById('last-modified').textContent = "Last Modified: " + modified;
-        }
+        var dat = commits[0]['commit']['committer']['date'];
+          document.getElementById('last-modified-datetime').textContent = dat.slice(0,10) + " " + dat.slice(11,19) ;
       });
   }
-}
+ModifiedDateTime()
+
+function ModifiedDate() {
+    fetch(repo_api_link).then((response) => {
+        return response.json();
+      })
+      .then((commits) => {
+        var dat = commits[0]['commit']['committer']['date'];
+          document.getElementById('last-modified-date').textContent = dat.slice(0,10);
+      });
+  }
+ModifiedDate()
+
+
+function ModifiedYear() {
+    fetch(repo_api_link).then((response) => {
+        return response.json();
+      })
+      .then((commits) => {
+        var dat = commits[0]['commit']['committer']['date'];
+          document.getElementById('last-modified-year').textContent = dat.slice(0,4);
+      });
+  }
+ModifiedYear()

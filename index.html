@@ -168,7 +168,7 @@
 
 				<footer>
 					<div class="related-information">
-						Copyright &#169; 2022, <a href="https://luerig.net">Moritz Lürig</a> | Last updated on  <span id='demo'></span> 2022-01-03 19:42:00.<br>
+						Copyright &#169; <span id="last-modified-year"></span>, <a href="https://luerig.net">Moritz Lürig</a> | Last updated on <span id="last-modified-datetime"></span>.<br>
 						Created using styling from <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
 						<a href="https://github.com/pradyunsg/furo">Furo theme</a>.
 					</div>
@@ -179,17 +179,9 @@
 		</div>
 	</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/assets/js/furo.js"></script>
-	<script>
-		function myFunction() {
-			var x = document.lastModified;
-			document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
-		}
-
-		myFunction()
-	</script>
-
-</body>
-    </body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="/assets/js/furo.js"></script>
+	<script src="/assets/js/custom.js"></script>
+	</body>
+	
 </html>
