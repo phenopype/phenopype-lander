@@ -86,7 +86,7 @@
 					<div class="top-container">
 
 						<div class="logo-container">
-						<img alt="phenopype (logo)" class="align-center" src="/assets/images/logo.png" style="height: 90px;"/>
+						<img alt="phenopype (logo)" class="align-center" src="https://raw.githubusercontent.com/phenopype/phenopype/main/assets/phenopype_logo.png" style="height: 90px;"/>
 						</div>
 
 						<div class="title-container">
@@ -110,7 +110,7 @@
 						<div class="lander_item sd-shadow-sm sd-card-hover">
 							<a href="https://phenopype.org/docs/" >
 							<img src="/assets/images/thumb_docs.png" />
-							<h4>Docs</h4>
+							<h4>Docs | Main page</h4>
 							<p>Full documentation and API-reference</p></a>
 						</div>
 
@@ -168,7 +168,7 @@
 
 				<footer>
 					<div class="related-information">
-						Copyright &#169; 2022, <a href="https://luerig.net">Moritz Lürig</a> | Last updated on 2022-01-03 19:42:00.<br>
+						Copyright &#169; 2022, <a href="https://luerig.net">Moritz Lürig</a> | Last updated on  <span id='demo'></span> 2022-01-03 19:42:00.<br>
 						Created using styling from <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
 						<a href="https://github.com/pradyunsg/furo">Furo theme</a>.
 					</div>
@@ -181,6 +181,15 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/assets/js/furo.js"></script>
+	<script>
+		function myFunction() {
+			var x = document.lastModified;
+			document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
+		}
 
+		myFunction()
+	</script>
+
+</body>
     </body>
 </html>

@@ -1,2 +1,5 @@
 sass:
    sourcemap: never
+   
+plugins:
+  - jekyll-last-modified-at
